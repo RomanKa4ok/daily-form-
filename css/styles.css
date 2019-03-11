@@ -1,0 +1,150 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #7a7b7f;
+	font-family: 'Arial', sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff512f+0,dd2476+100 */
+	background: #ff512f; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #ff512f 0%, #dd2476 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #ff512f 0%,#dd2476 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #ff512f 0%,#dd2476 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff512f', endColorstr='#dd2476',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+.container {
+	max-width: 520px;
+	width: 100%;
+	padding: 0 30px;
+	background: #fff;
+	border-radius: 3px;
+
+}
+
+
+.create__title {
+	font:700 24px/20px 'Arial', sans-serif;
+	color: black;
+	padding-top: 30px;
+	position: relative;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+.create__title::before {
+	content: '';
+	width: 25px;
+	height: 25px;
+	background: url('../images/sign-up-icon.png') no-repeat;
+	position: absolute;
+	top: 25px;
+	left: 0;
+} 
+.create__desc {
+	font:400 12px/20px 'Arial', sans-serif;
+	margin-bottom: 30px;
+
+}
+.link {
+	color: #ea355a;
+	text-decoration: none;
+}
+.field__item--small {
+	width: 48%;
+	background:#f0f0f0;
+
+}
+.field__item--small:first-child {
+	margin-right: 4%;
+}
+
+.field-small {
+	
+	display: flex;
+}
+
+.field__item {
+	width: 100%;
+	background:#f0f0f0;
+	
+}
+[class^="field__item"] {
+		border-radius: 3px;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+[class^="field__item"]:invalid {
+	border: 1px solid red;
+}
+[class^="field__item"]:valid {
+	border: 1px solid lightblue;
+}
+
+
+
+.button {
+	width: 100%;
+	padding:  15px 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #fff;
+	background: #ea355a;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border: 3px solid #bd1962;
+
+}
+.button:active {
+	transform: scaleY(0.95);
+	transform: scaleX(0.99);
+	border: 3px solid transparent;
+	transition: all 0.05s;
+}
+.policy-notification {
+	font:400 12px/20px 'Arial', sans-serif;
+	margin-bottom: 55px;
+}
